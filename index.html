@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Bootstrap demo">
+    <meta name="description" content="Personal portfolio">
+    <meta name="keywords" content="html, html tutorial, bootstrap, bootstrap cdn, bootstrap tutorial">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="5 days days">
+    <meta name="author" content="Asif Amir">
+
+
+    <!-- CSS links -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>Bootstrap demo</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="mb-5">
+          <form>
+          <!-- mail input -->
+          <div class="mb-3">
+            <label for="email1" class="form-label">Email address</label>
+            <input type="email" class="form-control email1" id="email1" name="email1" placeholder="xyz@gmail.com" required>
+          </div>
+
+          <!-- password input -->
+          <div class="mb-3">
+            <label for="password1" class="form-label">Password</label>
+            <input type="password" class="form-control password1" id="password1" name="password1" placeholder="Enter password" required>
+
+          <!-- form text -->
+          <div id="text1" class="form-text text1">Input correct password</div>
+          </div>
+
+          <!-- check box -->
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="check1" name="check1">
+            <label class="form-check-label" for="check1">Keep me logged in</label>
+          </div>
+
+          <!-- button -->
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="reset" class="btn btn-danger">Reset</button>
+        </form>
+
+        <br>
+        <form>
+          <!-- mail input with disabled with small and large form -->
+          <div class="mb-3">
+            <label for="email2" class="form-label">disabled mail address</label>
+            <input type="email" class="form-control form-control-lg email2" id="email2" name="email2" placeholder="form-control-lg" disabled>
+          </div>
+
+          <!-- password input with read only-->
+          <div class="mb-3">
+            <label for="password2" class="form-label">readonly password</label>
+            <input type="password" class="form-control form-control-sm password2" id="password2" name="password2" placeholder="form-control-sm" readonly>
+        </form>
+        </div>
+
+        <!-- name input using flax-->
+        <div class="mb-5">
+          <div class="row g-3 align-items-center">
+            <div class="col-auto">
+              <label for="name1" class="col-form-label password3">Name</label>
+            </div>
+            <div class="col-auto">
+              <input type="text" id="name1" class="form-control name1" name="name1" value="Asif Amir">
+            </div>
+            <div class="col-auto">
+              <span id="text2" class="form-text text2">
+                Must be 8-20 characters long.
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- plaintext form -->
+        <div class="mb-5">
+          <!-- readonly mail box -->
+          <div class="mb-3 row">
+            <label for="email3" class="col-sm-2 col-form-label email3">Email</label>
+            <div class="col-sm-10">
+              <input type="email" readonly class="form-control-plaintext email3" id="email3" name="password3" value="readonly_plaintext@gmail.com">
+            </div>
+          </div>
+          <!-- password input box -->
+          <div class="mb-3 row">
+            <label for="password3" class="col-sm-2 col-form-label password3">Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control password3" id="password3" name="password3">
+            </div>
+          </div>
+        </div>
+
+        <!-- default value mail with password verification using flax-->
+        <div class="mb-5">
+          <form class="row g-3">
+            <div class="col-auto">
+              <label for="email4" class="visually-hidden email4">Email</label>
+              <input type="email" readonly class="form-control-plaintext email4" id="email4" name="email4" value="xyz@email.com">
+            </div>
+            <div class="col-auto">
+              <label for="password4" class="visually-hidden password4">Password</label>
+              <input type="password" class="form-control password4" id="password4" name="password4" placeholder="Password">
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-secondary mb-3">Confirm identity</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- file input -->
+        <div class="mb-5">
+          <!-- single file -->
+          <div class="mb-3">
+            <label for="file1" class="form-label file1">Single file input</label>
+            <input class="form-control file1" type="file" id="file1" name="file1">
+          </div>
+          <!-- multiple file -->
+          <div class="mb-3">
+            <label for="file2" class="form-label file2">Multiple files input</label>
+            <input class="form-control file2" type="file" id="file2" name="file2" multiple>
+          </div>
+          <!-- color picker -->
+          <label for="colorInput" class="form-label colorInput">Color picker</label>
+          <input type="color" class="form-control form-control-color colorInput" id="colorInput" name="colorInput" value="#563d7c" title="Choose your color">
+        </div>
+
+        <!-- Datalist -->
+        <div class="mb-3">
+          <label for="datalist1" class="form-label datalist1">Select city</label>
+          <input class="form-control datalist1" list="datalistOptions" id="datalist1" placeholder="Type to search...">
+          <datalist id="datalistOptions">
+            <option value="San Francisco">
+            <option value="New York">
+            <option value="Seattle">
+            <option value="Los Angeles">
+            <option value="Chicago">
+          </datalist>
+        </div>
+
+        <!-- single select -->
+        <div class="mb-3">
+          <select class="form-select select1">
+            <option selected>Single select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <!-- multiple select menu with size attribute -->
+        <div class="mb-5">
+          <select class="form-select" size="3" aria-label="size 3 select example" multiple>
+            <option selected>multiple select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+
+        <!-- switch switch -->
+        <div class="mb-5">
+          <!-- default switch -->
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+          </div>
+          <!-- checked switch -->
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+            <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+          </div>
+          <!-- disabled switch -->
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDisabled" disabled>
+            <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+          </div>
+          <!-- disabled checked switch -->
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckCheckedDisabled" checked disabled>
+            <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
+          </div>
+        </div>
+
+        <!-- radio switch -->
+        <div class="mb-5">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+              Default radio
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+              Second default radio
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+            <label class="form-check-label" for="exampleRadios3">
+              Disabled radio
+            </label>
+          </div>
+        </div>
+
+        <!-- inline switch -->
+        <div class="mb-0">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            <label class="form-check-label" for="inlineCheckbox1">1</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+            <label class="form-check-label" for="inlineCheckbox2">2</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+            <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
+          </div>
+        </div>
+
+        <div class="mb-5">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">1</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">2</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+            <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+    
+    <!-- JS links -->
+    <script src="js/pop.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>
